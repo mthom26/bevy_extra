@@ -12,10 +12,13 @@ license = "MIT"
 readme = "README.md"
 exclude = ["examples/*.png", "examples/*.gif", "*.png", "assets/"]
 
-[dependencies.bevy]
-version = "0.5"
-default-features = false
-features = [ "render" ]
+[dependencies]
+bevy = {git = "https://github.com/bevyengine/bevy", branch = "main", features = ["render"]}
+
+# [dependencies.bevy]
+# version = "0.5"
+# default-features = false
+# features = [ "render" ]
 
 
 [[example]]
